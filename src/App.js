@@ -1,11 +1,13 @@
 import './App.css';
-import ImportComponent from './R03_importComponent';
+import InputSample from './InputSample';
+//import Counter from './Counter';
+//import Hello from './Hello.js';
+//import Wrapper from './Wrapper';
+
 
 function App() {
   return (
-    <div className="App">
-        <ImportComponent></ImportComponent>
-    </div>
+    <InputSample />
   );
 }
 
