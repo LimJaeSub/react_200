@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef,useState } from 'react';
 
 function InputSample() {
   const [inputs, setInputs] = useState({
@@ -7,6 +7,8 @@ function InputSample() {
   });
 
   const { name, nickname } = inputs; // 비구조화 할당을 통해 값 추출 (변수name과 nickname에 객체 input의 속성값인 name,nickname을 집어넣음)
+
+  const nameInput = useRef();
 
   const onChange = (e) => {
       console.log(e.target);
@@ -28,6 +30,8 @@ function InputSample() {
       name: '',
       nickname: '',
     })
+    nameInput.current.focus();
+
   };
 
 
